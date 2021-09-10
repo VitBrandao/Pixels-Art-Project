@@ -30,9 +30,14 @@
     border: 1px solid black;
 }
 
+.line {
+    width: 210px;
+    height: 40px;
+}
 /*
 #pixel-board {
     border: 1px solid black;
     width: 210px;
     height: 210px;
 }
+*/
