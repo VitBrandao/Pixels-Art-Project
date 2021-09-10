@@ -1,4 +1,4 @@
-window.onload = resetToWhite() 
+window.onload = resetToWhite
 
 function resetToWhite() {
     let pixelList = document.querySelectorAll(".pixel");
@@ -6,17 +6,28 @@ function resetToWhite() {
         pixelList[index].style.backgroundColor = "white"; 
     }
 }
-   
+
 /*
-function fillPixels(pixels){
-    for (let index = 0; index < pixels.length; index += 1) {
-        fourExtraPixels(pixels[index]);
+function selectBlack () {
+    let blackColor = document.querySelector("#black");
+    blackColor.className = "selected";
+}
+*/
+
+let div = document.querySelectorAll(".line");
+
+function creatingPixels (div) {
+    for (let index = 0; index < div.length; index += 1) {
+        creatingBox(div[index]);
     }
 }
 
-function fourExtraPixels () {
-    for (let index = 0; index < 4; index += 1) {
-        let newPixels = document.createElement("div");
-        pixels.appendChild(newPixels);
+function creatingBox (item) {
+    for (let index = 0; index < 5; index += 1) {
+        let newPixel = document.createElement("div");
+        newPixel.className = "pixel"; 
+        div[index].appendChild(newPixel);
     }
-} */
+}
+
+creatingPixels(div);
