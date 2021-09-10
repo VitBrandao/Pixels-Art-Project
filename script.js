@@ -1,9 +1,7 @@
-/*
-window.onload = function() {
-    let pixels = document.querySelectorAll(".pixel");
-    pixels.style.backgroundColor = "white"; 
+function resetToWhite() {
+    document.querySelectorAll(".pixel").style.color = "white"; 
 }
-
+/*
 function fillPixels(pixels){
     for (let index = 0; index < pixels.length; index += 1) {
         fourExtraPixels(pixels[index]);
