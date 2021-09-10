@@ -1,6 +1,12 @@
+window.onload = resetToWhite() 
+
 function resetToWhite() {
-    document.querySelectorAll(".pixel").style.color = "white"; 
+    let pixelList = document.querySelectorAll(".pixel");
+    for (index = 0; index < pixelList.length; index += 1) {
+        pixelList[index].style.backgroundColor = "white"; 
+    }
 }
+   
 /*
 function fillPixels(pixels){
     for (let index = 0; index < pixels.length; index += 1) {
