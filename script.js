@@ -30,3 +30,25 @@ function creatingBox (item) {
 }
 
 creatingPixels(div);
+
+
+let colorOne = document.getElementById("black");
+let colorTwo = document.getElementById("red");
+let colorThree = document.getElementById("blue");
+let colorFour = document.getElementById("green");
+
+colorOne.addEventListener("click", selectedColor);
+colorTwo.addEventListener("click", selectedColor);
+colorThree.addEventListener("click", selectedColor);
+colorFour.addEventListener("click", selectedColor);
+
+
+function selectedColor (event) {
+    let oldColor = document.getElementsByClassName("selected")[0];
+    oldColor.classList.remove("selected");
+
+    event.target.classList.add("selected");
+}
+
+
+
