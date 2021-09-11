@@ -7,12 +7,11 @@ function resetToWhite() {
     }
 }
 
-/*
+
 function selectBlack () {
-    let blackColor = document.querySelector("#black");
-    blackColor.className = "selected";
+    let blackColor = document.getElementById("black");
+    blackColor.className.add = "selected";
 }
-*/
 
 let div = document.querySelectorAll(".line");
 
