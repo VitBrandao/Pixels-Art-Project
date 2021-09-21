@@ -1,3 +1,28 @@
+#title, #subtitle, #color-palette, #pixel-board, footer {
+    text-align: center;
+}
+
+.botao, .quadro {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+body {
+    background-color: #F3FFB9;
+}
+
+#title {
+    background-color: #B8B8F3;
+    font-family: "Stick No Bills";
+    color:#0C0910;
+}
+
+footer {
+    color: gray;
+    font-size: small;
+}
+
 .color {
     border: 1px solid black;
     display: inline-block;
@@ -10,7 +35,7 @@
 }
 
 #red {
-    background-color: #E54B4B;
+    background-color: #E9806E;
 }
 
 #blue {
